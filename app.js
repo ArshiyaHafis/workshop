@@ -129,6 +129,7 @@ app.get("/data", async function(req,res) {
     console.log(data.data);
     res.send(data.data);
 })
-app.listen(3000, () => {
-    console.log("Listening on port 3000");
-});
+// app.listen(3000, () => {
+//     console.log("Listening on port 3000");
+// });
+app.listen(process.env.PORT || 3000);
